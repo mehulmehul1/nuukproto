@@ -1,0 +1,37 @@
+{
+  "name": "my-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+      "three": "^0.157.0",
+      "@types/three": "^0.157.0",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      
+      "@react-three/fiber": "^8.15.14",
+      "@react-three/drei": "^9.93.0",
+      "@react-three/rapier": "^1.2.1",
+      
+      "ecctrl": "^1.0.92",
+      
+      "@react-three/postprocessing": "^2.15.11",
+      "postprocessing": "^6.37.3",
+      "screen-space-reflections": "^2.5.0",
+      
+      "r3f-perf": "^7.1.2",         
+      "leva": "^0.9.35",            
+      "zustand": "^4.4.7"
+    },
+    "devDependencies": {
+      "typescript": "^5.3.3",
+      "vite": "^5.0.10",
+      "@vitejs/plugin-react": "^4.2.1"
+    }
+}
