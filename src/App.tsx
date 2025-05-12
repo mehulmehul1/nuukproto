@@ -7,15 +7,15 @@ import {
   useGLTF,
   KeyboardControls,
   // RectAreaLight,
-  useHelper,
+
 } from "@react-three/drei";
 import { RectAreaLightUniformsLib } from "three/examples/jsm/lights/RectAreaLightUniformsLib.js";
-import { DirectionalLightHelper } from "three";
+// import { DirectionalLightHelper } from "three";
 import { Physics, RigidBody } from "@react-three/rapier";
 import Ecctrl from "ecctrl";
-import { EffectComposer, Bloom, Vignette,SSAO,HueSaturation, BrightnessContrast,DepthOfField } from "@react-three/postprocessing";
-import { KernelSize, BlendFunction } from "postprocessing";
-import { useControls } from 'leva';
+import { EffectComposer, Bloom, Vignette, BrightnessContrast } from "@react-three/postprocessing";
+// import { KernelSize, BlendFunction } from "postprocessing";
+// import { useControls } from 'leva';
 // import { DirectionalLightHelper, RectAreaLightUniformsLib } from "three";
 
 RectAreaLightUniformsLib.init();
@@ -38,7 +38,7 @@ const keyboardMap = [
 // Main scene component
 export default function Scene() {
   const [debugPhysics, setDebugPhysics] = useState(false);
-  const [cameraMode, setCameraMode] = useState<'FreeCamera' | 'FirstPerson'>('FreeCamera');
+  // const [cameraMode, setCameraMode] = useState<'FreeCamera' | 'FirstPerson'>('FreeCamera');
 
 
   // Toggle debug physics with "P" key
